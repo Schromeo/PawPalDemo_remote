@@ -15,11 +15,27 @@ class LoginView: UIView {
     var tfPassword: UITextField!
     
     override init(frame: CGRect) {
-        <#code#>
+        super.init(frame: frame)
+        self.backgroundColor = .white
+        
+        setupLabelTitle()
+        setupTFEmail()
+        setupTFPassword()
+        
+        initConstraints()
+    }
+    
+    func setupLabelTitle(){}
+    func setupTFEmail(){}
+    func setupTFPassword(){}
+    
+    func initConstraints(){
+        NSLayoutConstraint.activate([])
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
     
 }
